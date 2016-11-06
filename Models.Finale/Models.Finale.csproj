@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C6D37A6-F981-4C77-B36E-D8CFC8B8426F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibrary1</RootNamespace>
+    <AssemblyName>ClassLibrary1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AggregateGradeReport.cs" />
+    <Compile Include="AggregaterootStudyYear.cs" />
+    <Compile Include="AggregaterootSubjects.cs" />
+    <Compile Include="Credits.cs" />
+    <Compile Include="EvaluationType.cs" />
+    <Compile Include="FactoryGradeReport.cs" />
+    <Compile Include="FactoryStudyYear.cs" />
+    <Compile Include="FactorySubjects.cs" />
+    <Compile Include="Generics.cs" />
+    <Compile Include="Grade.cs" />
+    <Compile Include="GradeReport.cs" />
+    <Compile Include="InvalidCredits.cs" />
+    <Compile Include="IReport.cs" />
+    <Compile Include="PlainText.cs" />
+    <Compile Include="Professor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proportion.cs" />
+    <Compile Include="RegistrationNumber.cs" />
+    <Compile Include="RepositoryGradeReport.cs" />
+    <Compile Include="RepositorySubjects.cs" />
+    <Compile Include="RepositoryStudyYear.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudyYear.cs" />
+    <Compile Include="Subject.cs" />
+    <Compile Include="SubjectInformation.cs" />
+    <Compile Include="Subjects.cs" />
+    <Compile Include="SubjectSituation.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
